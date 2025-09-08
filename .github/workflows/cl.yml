@@ -1,0 +1,13 @@
+name: Test Action
+
+on:
+  push:
+    branches:
+      - main  # 或你的默认分支名
+
+jobs:
+  hello-world:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Say Hello
+        run: echo "Hello, GitHub Actions!"
